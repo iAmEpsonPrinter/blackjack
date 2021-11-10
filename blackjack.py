@@ -4,7 +4,7 @@ from discord.ext import commands
 client = commands.Bot(command_prefix = ".")
 
    
-@client.command(aliases = ["bj")
+@client.command(aliases = ["bj"])
 async def blackjack(self, ctx):
     if not ctx.guild:
         return await ctx.send("You cannot use this commands in dms")
